@@ -1,0 +1,95 @@
+<!-- include <header> -->
+
+    <%-include('include/_header')%>
+
+    <!-- include </header> -->
+
+
+
+<!-- <main>  -->
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/student-marks"> <i class="fas fa-angle-double-left"></i> all users</a>
+                </div>
+            </div>
+
+
+            <div class="form-title text-center">
+                <h2 class="text-dark"> update user</h2>
+                <span class="text-ligth">use the below form to update user</span>
+
+            </div>
+
+<!-- form handling -->
+
+<form method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="_id" class="text-ligth" style="display:none ;">_id</label>
+
+            <input type="text" name="_id" value="<%=user._id %>" placeholder="name of student" style="display:none ;">
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="text-ligth">NAME</label>
+
+            <input type="text" name="name" value="<%=user.name %>" placeholder="name of student">
+        </div>
+
+        <div class="form-group">
+            <label for="usn" class="text-ligth">USN</label>
+
+            <input type="text" name="usn" value="<%=user.usn %>" placeholder="2BL19EE022">
+        </div>
+
+        <div class="form-group">
+            <label for="CIE1" class="text-ligth">CIE1</label>
+
+            <input type="text" name="CIE1" value="<%=user.CIE1 %>" placeholder="CIE1 MARKS OF STUDENT">
+        </div>
+
+        <div class="form-group">
+            <label for="CIE2" class="text-ligth">CIE2</label>
+
+            <input type="text" name="CIE2" value="<%=user.CIE2 %>" placeholder="CIE2 MARKS OF STUDENT">
+        </div>
+
+        <div class="form-group">
+            <label for="CIE3" class="text-ligth">CIE3</label>
+
+            <input type="text" name="CIE3" value="<%=user.CIE3 %>" placeholder="CIE3 MARKS OF STUDENT">
+        </div>
+
+<div class="form-group">
+<button type="submit" class="btn text-dark update">
+save
+</button>
+</div>
+
+    </div>
+
+</form>
+
+
+
+
+
+        </div>
+    </main>
+
+
+<!-- </main> -->
+
+
+
+
+
+
+    <!-- include <footer> -->
+
+        <%-include('include/_footer')%>
+
+        <!-- include </footer> -->
